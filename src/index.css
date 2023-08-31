@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .offer-card {
+    @apply w-[210px] h-[297px] p-4;
+  }
+  .section-title {
+    @apply text-lg font-bold uppercase text-center;
+  }
+  .button-yellow {
+    @apply px-4 py-1.5 font-semibold text-yellow-primary border-2 border-yellow-primary rounded-md active:bg-yellow-primary active:text-blue-primary lg:hover:bg-yellow-primary lg:hover:text-blue-primary transition;
+  }
+  .button-blue {
+    @apply px-4 py-1.5 font-semibold text-blue-primary border-2 border-blue-primary rounded-md active:bg-blue-primary active:text-yellow-primary lg:hover:bg-yellow-primary lg:hover:text-blue-primary transition;
+  }
+  .footer-heading {
+    @apply text-xl font-bold uppercase;
+  }
+  .footer-container {
+    @apply w-full flex flex-col gap-3;
+  }
+  .footer-divider {
+    @apply bg-blue-primary w-24 h-1;
+  }
+  .footer-icon-links {
+    @apply inline-flex items-center gap-2 text-lg font-medium cursor-pointer;
+  }
+  .footer-icon-wrapper {
+    @apply bg-blue-primary w-fit h-auto aspect-square rounded-full p-2 text-xl text-white;
+  }
+}
+
+.banner-position {
+  object-position: 50% 25%;
+}
