@@ -20,7 +20,7 @@ const prices = {
         "Ads Management",
         "Scheduling Post",
         "Copywriting",
-        "Photo and Video Production\n(Social Media Standard Production)",
+        "Photo and Video Production",
       ],
     },
     {
@@ -40,7 +40,7 @@ const prices = {
         "Ads Management",
         "Scheduling Post",
         "Copywriting",
-        "Photo and Video Production\n(Social Media Standard Production)",
+        "Photo and Video Production",
       ],
     },
     {
@@ -60,7 +60,7 @@ const prices = {
         "Ads Management",
         "Scheduling Post",
         "Copywriting",
-        "Photo and Video Production\n(Social Media Standard Production)",
+        "Photo and Video Production",
       ],
     },
   ],

@@ -18,19 +18,25 @@ const Price = ({ data }) => {
         </strong>
         <div className="absolute -left-[10%] w-[120%] h-auto aspect-[19/5] bg-yellow-primary filter-none rounded-[50%] rotate-[15deg] z-0" />
       </span>
-      <div className="grid grid-cols-2">
+      <div className="w-full grid grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 lg:gap-4">
         <PriceMainFeatures data={data.feeds} name="Feeds" />
         <PriceMainFeatures data={data.stories} name="Stories" />
       </div>
       <div className="w-full h-1 bg-yellow-primary my-4"></div>
-      <ul className="w-full pl-6 list-disc mb-5">
-        {data.features.map((f) => (
-          <li className="text-sm whitespace-pre-line mb-3" key={f}>
+      <ul className="w-full pl-6 list-disc mb-5 lg:mb-0">
+        {data.features.map((f, index) => (
+          <li className="text-sm whitespace-pre-line mb-3 lg:text-base" key={f}>
             {f}
+            {index === data.features.length - 1 && (
+              <>
+                <br />
+                <span className="text-2xs lg:text-sm">{`(Social Media Standard Production)`}</span>
+              </>
+            )}
           </li>
         ))}
       </ul>
-      <button className="w-full button-yellow text-sm uppercase">
+      <button className="w-full button-yellow text-sm uppercase lg:hidden">
         Diskusikan budgetmu sekarang
       </button>
     </article>

@@ -12,14 +12,17 @@ const Prices = () => {
       )}
     >
       <div className="w-full flex flex-col gap-10 text-center">
-        <h2 className="section-title">{prices.title}</h2>
-        <p className="text-xs font-medium">{prices.desc}</p>
+        <h2 className="section-title whitespace-pre-line">{prices.title}</h2>
+        <p className="text-xs font-medium lg:text-3xl">{prices.desc}</p>
       </div>
-      <div className="flex flex-col gap-32">
+      <div className="flex flex-col gap-32 lg:flex-row lg:gap-5">
         {prices.prices.map((p) => (
           <Price key={p.name} data={p} />
         ))}
       </div>
+      <button className="button-blue w-fit self-center uppercase">
+        Diskusikan budgetmu sekarang!
+      </button>
     </Section>
   );
 };

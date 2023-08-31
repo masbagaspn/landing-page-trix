@@ -1,5 +1,5 @@
 const offer = {
-  title: "Apa Kamu Ingin Penjualanmu Meroket Seperti Ini?",
+  title: "Apa Kamu Ingin Penjualanmu\nMeroket Seperti Ini?",
   offers: [
     {
       id: "offer-1",

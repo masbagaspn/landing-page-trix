@@ -16,9 +16,9 @@ const Banner2 = () => {
   return (
     <section
       ref={ref}
-      className="relative w-full h-[20vh] flex items-center justify-center overflow-hidden"
+      className="relative w-full h-[20vh] lg:h-[60vh] flex items-center justify-center overflow-hidden"
     >
-      <h2 className="relative text-lg font-bold uppercase text-yellow-primary drop-shadow-jargon z-10">
+      <h2 className="relative text-lg font-bold uppercase text-yellow-primary drop-shadow-jargon z-10 lg:text-7xl">
         Semua ada trixnya
       </h2>
       <m.img

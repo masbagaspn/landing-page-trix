@@ -22,7 +22,7 @@ export default {
       dropShadow: {
         grey: "-2px 0 0 rgb(200,199,199)",
         trixadon: "12px -14px 34px rgba(255,255,255,0.25)",
-        service: "0 12px 20 rgba(0,0,0,0.25)",
+        service: "0 12px 20px rgba(0,0,0,0.25)",
         "price-start": "0 4px 4px rgba(0,0,0,0.3)",
         "price-price": "-4px -2px 4px rgba(0,0,0,0.4)",
         "price-title": "0 4px 4px rgba(0,0,0,0.48)",

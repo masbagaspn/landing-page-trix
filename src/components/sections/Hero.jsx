@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <Section
       className={clsx(
-        "w-full min-h-screen flex flex-col justify-center items-center pt-6 pb-16",
+        "w-full min-h-screen flex flex-col justify-center items-center pt-6 pb-16 lg:hidden",
         "bg-[url('/assets/background/bg-blue-mobile.png')] bg-cover bg-center bg-no-repeat"
       )}
     >

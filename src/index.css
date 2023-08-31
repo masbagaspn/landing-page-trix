@@ -4,28 +4,28 @@
 
 @layer components {
   .offer-card {
-    @apply w-[210px] h-[297px] p-4;
+    @apply w-[210px] h-[297px] p-4 lg:w-[800px] lg:h-[400px] lg:p-14;
   }
   .section-title {
-    @apply text-lg font-bold uppercase text-center;
+    @apply text-lg font-bold uppercase text-center lg:text-3xl;
   }
   .button-yellow {
-    @apply px-4 py-1.5 font-semibold text-yellow-primary border-2 border-yellow-primary rounded-md active:bg-yellow-primary active:text-blue-primary lg:hover:bg-yellow-primary lg:hover:text-blue-primary transition;
+    @apply px-4 py-1.5 lg:px-6 lg:py-2.5 lg:text-2xl font-semibold text-yellow-primary border-2 border-yellow-primary rounded-md active:bg-yellow-primary active:text-blue-primary lg:hover:bg-yellow-primary lg:hover:text-blue-primary transition;
   }
   .button-blue {
-    @apply px-4 py-1.5 font-semibold text-blue-primary border-2 border-blue-primary rounded-md active:bg-blue-primary active:text-yellow-primary lg:hover:bg-yellow-primary lg:hover:text-blue-primary transition;
+    @apply px-4 py-1.5 lg:px-6 lg:py-2.5 lg:text-2xl font-semibold text-blue-primary border-2 border-blue-primary rounded-md active:bg-blue-primary active:text-yellow-primary lg:hover:bg-blue-primary lg:hover:text-yellow-primary transition;
   }
   .footer-heading {
-    @apply text-xl font-bold uppercase;
+    @apply text-xl lg:text-2xl font-bold uppercase leading-4 lg:leading-6;
   }
   .footer-container {
-    @apply w-full flex flex-col gap-3;
+    @apply w-full flex flex-col gap-3 lg:gap-0;
   }
   .footer-divider {
-    @apply bg-blue-primary w-24 h-1;
+    @apply bg-blue-primary w-24 h-1 lg:mt-1 lg:mb-4;
   }
   .footer-icon-links {
-    @apply inline-flex items-center gap-2 text-lg font-medium cursor-pointer;
+    @apply inline-flex items-center gap-2 text-lg font-medium cursor-pointer lg:mb-3 lg:text-base;
   }
   .footer-icon-wrapper {
     @apply bg-blue-primary w-fit h-auto aspect-square rounded-full p-2 text-xl text-white;

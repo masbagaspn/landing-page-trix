@@ -5,6 +5,7 @@ import Copy1 from "./components/sections/Copy1";
 import Copy2 from "./components/sections/Copy2";
 import Footer from "./components/sections/Footer";
 import Hero from "./components/sections/Hero";
+import HeroMobile from "./components/sections/HeroMobile";
 import Lanyard from "./components/sections/Lanyard";
 import Offers from "./components/sections/Offers";
 import Partners from "./components/sections/Partners";
@@ -14,8 +15,9 @@ import Testimonies from "./components/sections/Testimonies";
 
 function App() {
   return (
-    <main className="w-screen h-screen font-montserrat">
+    <main className="max-w-screen h-screen font-montserrat">
       <Hero />
+      <HeroMobile />
       <Offers />
       <Partners />
       <Banner />

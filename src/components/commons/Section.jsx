@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 
 const Section = ({ children, className }) => {
   return (
-    <section className={clsx("w-full px-5", className)}>{children}</section>
+    <section className={clsx("w-full px-5 lg:px-36", className)}>
+      {children}
+    </section>
   );
 };
 
