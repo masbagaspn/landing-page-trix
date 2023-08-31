@@ -13,12 +13,16 @@ const Partners = () => {
       <h2 className="section-title">{partners.title}</h2>
       <div className="w-full grid grid-cols-6 gap-5">
         {partners.partners.map((p) => (
-          <img
+          <div
             key={p.name}
-            src={`/assets/logos/${p.images}.png`}
-            alt={p.name}
-            className="w-9 lg:w-32 h-auto aspect-square object-contain object-center"
-          />
+            className="w-full h-full flex justify-center items-center"
+          >
+            <img
+              src={`/assets/logos/${p.images}.png`}
+              alt={p.name}
+              className="w-9 lg:w-32 h-auto aspect-square object-contain object-center"
+            />
+          </div>
         ))}
       </div>
     </Section>

@@ -17,13 +17,15 @@ const Testimonies = () => {
         {testimonies.map((t) => (
           <article
             key={t.name}
-            className="flex flex-col p-4 bg-yellow-primary rounded-lg lg:px-4 lg:pt-5 lg:pb-14"
+            className="flex flex-col p-4 bg-yellow-primary rounded-lg lg:px-4 lg:pt-5 lg:pb-14 2xl:px-8 2xl:pt-8"
           >
-            <h3 className="text-2xl font-bold lg:text-4xl lg:mb-2">{t.name}</h3>
-            <span className="text-xs font-medium mb-5 lg:text-sm lg:mb-7">
+            <h3 className="text-2xl font-bold lg:text-4xl lg:mb-2 2xl:text-6xl">
+              {t.name}
+            </h3>
+            <span className="text-xs font-medium mb-5 lg:text-sm lg:mb-7 2xl:text-base">
               {t.title}
             </span>
-            <p className="text-sm font-medium lg:text-lg">{`"${t.testimony}"`}</p>
+            <p className="text-sm font-medium lg:text-lg 2xl:text-2xl">{`"${t.testimony}"`}</p>
           </article>
         ))}
       </div>
