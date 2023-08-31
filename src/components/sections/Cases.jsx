@@ -10,7 +10,6 @@ const Cases = () => {
   const dots = [0, 1, 2];
   const [index, setIndex] = useState(0);
   const [tuple, setTuple] = useState([null, index]);
-  const [touchX, setTouchX] = useState(0);
 
   const handleNext = () => {
     setIndex((index + 1) % cases.length);
@@ -24,14 +23,6 @@ const Cases = () => {
       setIndex((index - 1) % cases.length);
     }
     setTuple([index, index - 1]);
-  };
-
-  const handleTouch = (e) => {
-    if (touchX > e.changedTouches[0].clientX) {
-      handleNext();
-    } else {
-      handlePrev();
-    }
   };
 
   const direction = tuple[0] > tuple[1] ? "increasing" : "decreasing";
@@ -56,8 +47,6 @@ const Cases = () => {
             animate="center"
             exit="exit"
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            onTouchStart={(e) => setTouchX(e.touches[0].clientX)}
-            onTouchEnd={(e) => handleTouch(e)}
             className={clsx(
               "w-full h-full absolute left-0 pt-7 px-7 flex flex-col z-0 lg:py-12 lg:px-36 2xl:py-20 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center",
               "bg-cover bg-top bg-no-repeat",
