@@ -9,14 +9,15 @@ const Footer = () => {
     <footer
       className={clsx(
         "w-full flex flex-col py-8 px-6 gap-10 lg:px-36 lg:pt-24",
-        "bg-[url('/assets/background/bg-yellow-mobile.png')] bg-top bg-cover bg-repeat"
+        "bg-[url('/assets/background/bg-yellow-mobile.png')] bg-top bg-cover bg-no-repeat",
+        "lg:bg-[url('/assets/background/bg-yellow-desktop.png')]"
       )}
     >
       <div className="w-full flex flex-col gap-10 lg:gap-0 lg:flex-row lg:justify-between">
         <div className="footer-container lg:w-2/5">
           <h3 className="footer-heading ">About Us</h3>
           <div className="footer-divider" />
-          <p className="text-xs font-medium lg:text-lg lg:leading-6">
+          <p className="text-xs font-medium text-center px-8 lg:text-left lg:text-lg lg:leading-6 lg:px-0">
             Berdiri sejak tahun 2018, Trix Collective bukan hanya sekedar
             creative agency. Kami adalah <strong>INISIATOR</strong> yang
             menciptakan movemen baru untuk menggali potensi dari brand Anda,
@@ -64,7 +65,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <span className="text-2xs text-center font-semibold pt-4 border-t border-black">
+      <span className="text-2xs text-center font-semibold pt-4 border-t border-black lg:text-xl lg:pt-10">
         Copyright 2023 PT. Semua Ada Trixnya. All Rights Reserved
       </span>
     </footer>

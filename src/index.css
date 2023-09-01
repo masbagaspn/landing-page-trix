@@ -19,13 +19,13 @@
     @apply text-xl lg:text-2xl font-bold uppercase leading-4 lg:leading-6;
   }
   .footer-container {
-    @apply w-full flex flex-col gap-3 lg:gap-0;
+    @apply w-full flex flex-col items-center gap-3.5 lg:items-start lg:gap-0;
   }
   .footer-divider {
     @apply bg-blue-primary w-24 h-1 lg:mt-1 lg:mb-4;
   }
   .footer-icon-links {
-    @apply inline-flex items-center gap-2 text-lg font-medium cursor-pointer lg:mb-3 lg:text-base;
+    @apply inline-flex flex-col items-center gap-3 text-lg font-medium cursor-pointer lg:mb-3 lg:text-base;
   }
   .footer-icon-wrapper {
     @apply bg-blue-primary w-fit h-auto aspect-square rounded-full p-2 text-xl text-white;

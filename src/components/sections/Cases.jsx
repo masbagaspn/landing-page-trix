@@ -37,7 +37,7 @@ const Cases = () => {
 
   return (
     <section className="w-full h-fit">
-      <m.div className="relative w-full h-[753px] lg:h-screen flex overflow-hidden z-0">
+      <m.div className="relative w-full h-[753px] lg:h-[972px] flex overflow-hidden z-0">
         <AnimatePresence custom={direction}>
           <m.article
             key={`case-${index}`}
@@ -48,7 +48,7 @@ const Cases = () => {
             exit="exit"
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className={clsx(
-              "w-full h-full absolute left-0 pt-7 px-7 flex flex-col z-0 lg:py-12 lg:px-36 2xl:py-20 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center",
+              "w-full h-full absolute left-0 pt-7 px-7 flex flex-col z-0 lg:py-8 lg:px-36 2xl:py-20 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center",
               "bg-cover bg-top bg-no-repeat",
               {
                 "bg-[url('/assets/background/bg-yellow-mobile.png')] lg:bg-[url('/assets/background/bg-yellow-desktop.png')] ":
@@ -67,7 +67,7 @@ const Cases = () => {
               <img
                 src={`/assets/images/cases/${cases[index].image}.png`}
                 alt="golkar-study-case"
-                className="w-full h-auto drop-shadow-case lg:w-2/5"
+                className="w-full h-auto drop-shadow-case lg:w-1/2"
               />
               <div className="flex flex-col lg:w-1/2">
                 <img

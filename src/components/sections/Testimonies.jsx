@@ -6,7 +6,7 @@ const Testimonies = () => {
   return (
     <Section
       className={clsx(
-        "pt-16 pb-20",
+        "flex flex-col items-center pt-16 pb-20",
         "bg-[url('/assets/background/bg-blue-mobile.png')]"
       )}
     >
@@ -28,6 +28,15 @@ const Testimonies = () => {
             <p className="text-sm font-medium lg:text-lg 2xl:text-2xl">{`"${t.testimony}"`}</p>
           </article>
         ))}
+      </div>
+      <div className="w-3/4 p-1 bg-yellow-primary rounded-2xl mt-14 lg:p-4">
+        <iframe
+          className="w-full h-auto aspect-video rounded-xl border-4 border-black"
+          src="https://www.youtube.com/embed/D4G0cxNVE3Q?si=-NSQ4wY37ZoIuNY0"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
       </div>
     </Section>
   );
