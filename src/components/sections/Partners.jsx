@@ -11,7 +11,7 @@ const Partners = () => {
       )}
     >
       <h2 className="section-title mb-4 lg:mb-48">{partners.title}</h2>
-      <div className="w-full grid grid-cols-6 gap-5 mb-5 lg:mb-10">
+      <div className="w-full grid grid-cols-6 grid-rows-2 gap-5 mb-5 lg:mb-10">
         {partners.partners.map((p) => (
           <div
             key={p.name}
