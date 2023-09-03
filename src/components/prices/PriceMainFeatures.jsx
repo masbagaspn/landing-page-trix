@@ -5,11 +5,13 @@ const PriceMainFeatures = ({ data, name }) => {
     <div className="w-full flex flex-col gap-2">
       <strong className="text-3xl font-medium inline-flex gap-2 lg:text-2xl">
         <span className="relative">
-          <span className="relative z-10">{data.total}</span>
+          <span className="relative z-10 drop-shadow-price-title">
+            {data.total}
+          </span>
           <div className="absolute left-0 top-0 bg-yellow-primary w-8 h-8 rounded-full z-0" />
         </span>
         <span className="relative">
-          <span className="relative z-10">{name}</span>
+          <span className="relative z-10 drop-shadow-price-title">{name}</span>
           <div className="absolute bottom-1.5 left-0 bg-yellow-primary w-[105%] h-2 z-0" />
         </span>
       </strong>

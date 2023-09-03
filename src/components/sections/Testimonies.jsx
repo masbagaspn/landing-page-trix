@@ -19,6 +19,9 @@ const Testimonies = () => {
             key={t.name}
             className="flex flex-col p-4 bg-yellow-primary rounded-lg lg:px-4 lg:pt-5 lg:pb-14 2xl:px-8 2xl:pt-8"
           >
+            <div className="w-14 h-auto aspect-square bg-gray-300 rounded-full flex items-center justify-center lg:hidden mb-2.5">
+              Foto
+            </div>
             <h3 className="text-2xl font-bold lg:text-4xl lg:mb-2 2xl:text-6xl">
               {t.name}
             </h3>

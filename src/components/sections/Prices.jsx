@@ -20,7 +20,7 @@ const Prices = () => {
           <Price key={p.name} data={p} />
         ))}
       </div>
-      <button className="button-blue w-fit self-center uppercase">
+      <button className="button-blue w-fit self-center uppercase hidden lg:block">
         Diskusikan budgetmu sekarang!
       </button>
     </Section>

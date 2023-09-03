@@ -6,7 +6,7 @@ const Copy2 = () => {
   return (
     <Section
       className={clsx(
-        "w-full h-fit pt-6 pb-16 flex flex-col justify-center items-center gap-8 lg:py-14",
+        "w-full h-fit pt-6 pb-16 flex flex-col justify-center items-center gap-8 lg:py-14 lg:gap-7",
         "bg-[url('/assets/background/bg-blue-mobile.png')] bg-cover bg-top bg-no-repeat"
       )}
     >

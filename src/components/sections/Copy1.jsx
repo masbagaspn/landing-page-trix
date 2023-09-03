@@ -7,7 +7,7 @@ const Copy1 = () => {
   return (
     <Section
       className={clsx(
-        "w-full py-8 flex flex-col items-center justify-center gap-5",
+        "w-full py-8 flex flex-col items-center justify-center gap-5 lg:gap-10",
         "bg-[url('/assets/background/bg-yellow-mobile.png')] bg-top bg-cover bg-no-repeat",
         "lg:bg-[url('/assets/background/bg-yellow-desktop.png')]"
       )}

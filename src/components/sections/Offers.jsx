@@ -11,7 +11,7 @@ const Offers = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((index) => (index + 1) % 3);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
