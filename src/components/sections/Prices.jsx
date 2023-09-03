@@ -12,7 +12,9 @@ const Prices = () => {
       )}
     >
       <div className="w-full flex flex-col gap-10 text-center">
-        <h2 className="section-title whitespace-pre-line">{prices.title}</h2>
+        <h2 className="section-title whitespace-normal lg:whitespace-pre-line">
+          {prices.title}
+        </h2>
         <p className="text-xs font-medium lg:text-3xl">{prices.desc}</p>
       </div>
       <div className="flex flex-col gap-32 lg:flex-row lg:gap-5">
