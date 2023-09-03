@@ -25,9 +25,9 @@ const Partners = () => {
           </div>
         ))}
       </div>
-      <span className="text-xs font-semibold text-center lg:text-xl">
+      {/* <span className="text-xs font-semibold text-center lg:text-xl">
         And many more...
-      </span>
+      </span> */}
     </Section>
   );
 };
