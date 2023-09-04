@@ -17,17 +17,23 @@ const Testimonies = () => {
         {testimonies.map((t) => (
           <article
             key={t.name}
-            className="flex flex-col p-4 bg-yellow-primary rounded-lg lg:px-4 lg:pt-5 lg:pb-14 2xl:px-8 2xl:pt-8"
+            className="flex flex-col p-4 bg-yellow-primary rounded-lg gap-5 lg:gap-7 lg:px-4 lg:pt-5 lg:pb-14 2xl:px-8 2xl:pt-8"
           >
-            <div className="w-14 h-auto aspect-square bg-gray-300 rounded-full flex items-center justify-center lg:hidden mb-2.5">
-              Foto
+            <div className="flex flex-col gap-2.5 lg:flex-row-reverse lg:justify-between">
+              <img
+                src={t.image}
+                alt={`foto-${t.name}`}
+                className="w-14 h-14 object-cover object-center bg-gray-300 rounded-full flex items-center justify-center"
+              />
+              <div className="flex flex-col lg:gap-2">
+                <h3 className="text-2xl font-bold lg:text-4xl 2xl:text-6xl">
+                  {t.name}
+                </h3>
+                <span className="text-xs font-extrabold 2xl:text-base">
+                  {t.title}
+                </span>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold lg:text-4xl lg:mb-2 2xl:text-6xl">
-              {t.name}
-            </h3>
-            <span className="text-xs font-medium mb-5 lg:text-sm lg:mb-7 2xl:text-base">
-              {t.title}
-            </span>
             <p className="text-sm font-medium lg:text-lg 2xl:text-2xl">{`"${t.testimony}"`}</p>
           </article>
         ))}
