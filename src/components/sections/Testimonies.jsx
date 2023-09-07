@@ -38,7 +38,7 @@ const Testimonies = () => {
           </article>
         ))}
       </div>
-      <div className="w-3/4 p-1 bg-yellow-primary rounded-2xl mt-14 lg:p-4">
+      {/* <div className="w-3/4 p-1 bg-yellow-primary rounded-2xl mt-14 lg:p-4">
         <iframe
           className="w-full h-auto aspect-video rounded-xl border-4 border-black"
           src="https://www.youtube.com/embed/D4G0cxNVE3Q?si=-NSQ4wY37ZoIuNY0"
@@ -46,7 +46,7 @@ const Testimonies = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         />
-      </div>
+      </div> */}
     </Section>
   );
 };
